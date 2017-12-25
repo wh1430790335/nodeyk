@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<script type="text/javascript">
+		var html = document.documentElement;
+		html.style.fontSize = window.innerWidth / 375 * 50 + 'px';
+   </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body,html,.wrap{
+            width: 100%;
+            height: 100%;
+        }
+        .header{
+            font-size: .3rem;
+            background: #ccc;
+            color: #fff;
+            text-align: center;
+            height: .7rem;
+            line-height: .7rem;
+        }
+        section{
+            width: 100%;
+            height: 100%;
+            flex-shrink: 1;
+            overflow: hidden;
+			/*overflow-y: scroll;*/
+			position: relative;
+        }
+        .ordge{
+			width: 100%;
+			position: relative;
+		}
+		.ordge h2{
+			width: 100%;
+			height: 0.8rem;
+			background: #999;
+			padding-left: 0.3rem;
+			font-size: 0.4rem;
+			line-height: 0.8rem;
+        }
+        .list{
+            width: 100%;
+            height: 100%;
+        }
+        .list li{
+            height: .8rem;
+            line-height: .8rem;
+            border-bottom: 1px solid #ccc;
+            font-size: .3rem;
+            padding-left: 15px;
+        }
+        .box{
+			width: 2rem;
+			border: 1px solid #ccc;
+			position: absolute;
+			top: 1rem;
+			right: -0.1rem;
+			background: rgba(255,255,255,0.7);
+		}
+		.box p{
+			width: 100%;
+			height: 0.5rem;
+			text-align: center;
+			line-height: 0.5rem;
+			/*下面测试*/
+			/*visibility: visible;*/
+			/*pointer-events: none;*/
+		}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            北京
+        </header>
+        <section class="section">
+			<div class="ordge">
+				<!-- <h2>热门</h2> -->
+				<!-- <ul class="list">
+                    <li>北京</li>
+                    <li>北京</li>
+                    <li>北京</li>
+                    <li>北京</li>
+                    <li>北京</li>
+				</ul> -->
+			</div>
+		</section>
+		<div class="box">
+            <!-- <p>1</p> -->
+		</div>
+    </div>
+    <script src="js/iscroll-probe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/demo.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
